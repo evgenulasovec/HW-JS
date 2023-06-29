@@ -294,21 +294,18 @@
 
 // let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
 
-                                        //   1)
+//                                           //1)
 // const newVegitables = [];
 
 // for (let item of vegetables) {
-//     newVegitables.push(`word: ${item}, length: ${item.length}` );
+//     newVegitables.push({word: item, length: item.length});
 
 // }
 
 // console.log (newVegitables);
 
-                                       //     2)const newVegitables = [];
-// const newVegitables = [];
-// for (let item of vegetables) {
-//     newVegitables.push(`${item}-${item.length}`);
+//                                            //2)
 
+// for (let item of newVegitables) {
+//     console.log (`${item.word}-${item.length}`);
 // }
-
-// console.log (newVegitables);
