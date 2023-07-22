@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e0dcd5;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header nav {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.burger-btn {
+  position: absolute;
+  top: 22px;
+  left: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  display: none;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  background-color: #e0dcd5;
+  /* display: none; */
+}
+.menu-item {
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    gap: 30px;
+    
+}
+
+
+/* вставка иконки поиска в input */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input[type="search"] {
+  padding-right: 40px;
+  height: 25px;
+  width: 400px;
+}
+
+.input-with-icon button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input-with-icon button img {
+  width: 15px;
+  height: 15px;
+}
