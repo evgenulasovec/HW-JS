@@ -1,0 +1,45 @@
+$main-color: aquamarine;
+$btn-color: rgb(7, 89, 62);
+$active-color: rgb(75, 242, 186);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tabs-wrapper {
+  padding: 20px;
+  background-color: $main-color;
+  button {
+    background-color: $btn-color;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgb(5, 33, 24);
+    }
+    &.active {
+      background-color: rgb(5, 33, 24);
+    }
+  }
+
+  div {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+    &.active {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transition: 0.7s;
+    }
+  }
+}

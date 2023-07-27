@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tabs-wrapper {
+  padding: 20px;
+  background-color: aquamarine;
+}
+.tabs-wrapper button {
+  background-color: rgb(7, 89, 62);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tabs-wrapper button:hover {
+  background-color: rgb(5, 33, 24);
+}
+.tabs-wrapper button.active {
+  background-color: rgb(5, 33, 24);
+}
+.tabs-wrapper div {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+}
+.tabs-wrapper div.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.7s;
+}/*# sourceMappingURL=style.css.map */
